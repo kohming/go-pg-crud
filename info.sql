@@ -1,9 +1,9 @@
 -- Database: books_database
 
--- DROP DATABASE books_database;
+DROP DATABASE demo_db;
 
-CREATE DATABASE books_database
-  WITH OWNER = postgres
+CREATE DATABASE demo_db
+  WITH OWNER = admin
        ENCODING = 'UTF8'
        TABLESPACE = pg_default
        CONNECTION LIMIT = -1;
@@ -25,4 +25,4 @@ WITH (
  OIDS=FALSE
 );
 ALTER TABLE books
- OWNER TO postgres;
+ OWNER TO admin;
